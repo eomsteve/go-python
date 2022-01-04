@@ -25,15 +25,15 @@
 #     print(f"{k}: {v}")
 
 
-def mul(*x):
-    result = 1
-    for i in range(len(x)):
-        if type(x[i]) is not int:
-            return "에러발생"
-        else:
-            result *= x[i]
-    return result
-
-
-ret_val = mul(1, 2, '3', 4)
-print(ret_val)
+# def mul(*x):
+#     result = 1
+#     for i in range(len(x)):
+#         if type(x[i]) is not int:
+#             return "에러발생"
+#         else:
+#             result *= x[i]
+#     return result
+#
+#
+# ret_val = mul(1, 2, '3', 4)
+# print(ret_val)
