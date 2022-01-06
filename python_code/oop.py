@@ -50,6 +50,8 @@ class Circle:
         print(f"원의 면적: {self.radius * self.radius * 3.14}")
 
 # 이것은 브런치
+#test
+
 
 
 area = Circle(2)
