@@ -21,5 +21,13 @@ a, b = input().split(" ")
 a = int(a)
 b = int(b)
 
-print(a < b)
+print(a ^ b)
 
+# n = int(input())
+#
+# n = bool(n)
+#
+# print(not n)
+
+# n = int(input())
+# print(~n)
