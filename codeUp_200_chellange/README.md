@@ -184,3 +184,17 @@ https://codeup.kr/problemsetsol.php?psid=33
 
 [91. \[기초-종합\] 함께 문제 푸는 날](https://codeup.kr/problem.php?id=6091)
 
+[92. \[기초-리스트\] 이상한 출석 번호 부르기1](https://codeup.kr/problem.php?id=6092)
+
+[93. \[기초-리스트\] 이상한 출석 번호 부르기2](https://codeup.kr/problem.php?id=6093)
+
+[94. \[기초-리스트\] 이상한 출석 번호 부르기3](https://codeup.kr/problem.php?id=6094)
+
+[95. \[기초-리스트\] 바둑판에 흰 돌 놓기](https://codeup.kr/problem.php?id=6095)
+
+[96. \[기초-리스트\] 이상한 출석 번호 부르기1](https://codeup.kr/problem.php?id=6096)
+
+[97. \[기초-리스트\] 이상한 출석 번호 부르기1](https://codeup.kr/problem.php?id=6097)
+
+[98. \[기초-리스트\] 이상한 출석 번호 부르기1](https://codeup.kr/problem.php?id=6098)
+

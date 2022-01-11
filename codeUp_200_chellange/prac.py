@@ -112,6 +112,29 @@
 #     else:
 #         print(i, end=" ")
 
-a, b, c = map(int, input().split(" "))
+# a, b, c = map(int, input().split())
+# d = 1
+# while d%a!=0 or d%b!=0 or d%c!=0 :
+#     d+=1
+# print(d)
+#
+# n = input()
+# ln = [0 for i in range(23)]
+#
+# num = [int(i) for i in input().split()]
+#
+# for i in range(1, 24):
+#     ln[i-1] = num.count(i)
+#
+# for i in range(len(ln)):
+#     print(ln[i], end=" ")
 
+# n = int(input())
+# num = [int(i) for i in input().split()]
+# num.reverse()
+# print(num)
 
+n = int(input())
+num = [int(i) for i in input().split()]
+
+print(min(num))
