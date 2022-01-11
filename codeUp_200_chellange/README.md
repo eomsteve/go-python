@@ -126,3 +126,61 @@ https://codeup.kr/problemsetsol.php?psid=33
 
 [62. \[기초-비트단위논리연산\] 비트단위로 XOR 하여 출력하기](https://codeup.kr/problem.php?id=6062)
 
+[63. \[기초-3항연산\] 정수 2개 입력받아 큰 값 출력하기](https://codeup.kr/problem.php?id=6063)
+
+[64. \[기초-3항연산\] 정수 2개 입력받아 큰 값 출력하기](https://codeup.kr/problem.php?id=6064)
+
+[65. \[기초-조건/선택실행구조\] 정수 3개 입력받아 짝수만 출력하기](https://codeup.kr/problem.php?id=6065)
+
+[66. \[기초-조건/선택실행구조\] 정수 3개 입력받아 짝/홀 출력하기](https://codeup.kr/problem.php?id=6066)
+
+[67. \[기초-조건/선택실행구조\] 정수 1개 입력받아 분류하기](https://codeup.kr/problem.php?id=6067)
+
+[68. \[기초-조건/선택실행구조\] 점수 입력받아 평가 출력하기](https://codeup.kr/problem.php?id=6068)
+
+[69. \[기초-조건/선택실행구조\] 평가 입력받아 다르게 출력하기](https://codeup.kr/problem.php?id=6069)
+
+[70. \[기초-조건/선택실행구조\] 월 입력받아 계절 출력하기](https://codeup.kr/problem.php?id=6070)
+
+[71. \[기초-반복실행구조\] 0 입력될 때까지 무한 출력하기](https://codeup.kr/problem.php?id=6071)
+
+[72. \[기초-반복실행구조\] 정수 1개 입력받아 카운트다운 출력하기1](https://codeup.kr/problem.php?id=6072)
+
+[73. \[기초-반복실행구조\] 정수 1개 입력받아 카운트다운 출력하기2](https://codeup.kr/problem.php?id=6073)
+
+[74. \[기초-반복실행구조\] 문자 1개 입력받아 알파벳 출력하기](https://codeup.kr/problem.php?id=6074)
+
+[75. \[기초-반복실행구조\] 정수 1개 입력받아 그 수까지 출력하기1](https://codeup.kr/problem.php?id=6075)
+
+[76. \[기초-반복실행구조\] 정수 1개 입력받아 그 수까지 출력하기2](https://codeup.kr/problem.php?id=6076)
+
+[77. \[기초-종합\] 짝수 합 구하기](https://codeup.kr/problem.php?id=6077)
+
+[78. \[기초-종합\] 원하는 문자가 입력될 때까지 반복 출력하기](https://codeup.kr/problem.php?id=6078)
+
+[79. \[기초-종합\] 언제까지 더해야 할까?](https://codeup.kr/problem.php?id=6079)
+
+[80. \[기초-종합\] 주사위 2개 던지기](https://codeup.kr/problem.php?id=6080)
+
+[81. \[기초-종합\] 16진수 구구단 출력하기](https://codeup.kr/problem.php?id=6081)
+
+[82. \[기초-종합\] 3 6 9 게임의 왕이 되자](https://codeup.kr/problem.php?id=6082)
+
+[83. \[기초-종합\] 빛 섞어 색 만들기](https://codeup.kr/problem.php?id=6083)
+
+[84. \[기초-종합\] 소리 파일 저장용량 계산하기](https://codeup.kr/problem.php?id=6084)
+
+[85. \[기초-종합\] 그림 파일 저장용량 계산하기](https://codeup.kr/problem.php?id=6085)
+
+[86. \[기초-종합\] 거기까지! 이제 그만~](https://codeup.kr/problem.php?id=6086)
+
+[87. \[기초-종합\] 3의 배수는 통과](https://codeup.kr/problem.php?id=6087)
+
+[88. \[기초-종합\] 수 나열하기1](https://codeup.kr/problem.php?id=6088)
+
+[89. \[기초-종합\] 수 나열하기2](https://codeup.kr/problem.php?id=6089)
+
+[90. \[기초-종합\] 수 나열하기3](https://codeup.kr/problem.php?id=6090)
+
+[91. \[기초-종합\] 함께 문제 푸는 날](https://codeup.kr/problem.php?id=6091)
+
