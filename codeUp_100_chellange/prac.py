@@ -188,11 +188,12 @@
 #         print(array_map[i][j], end=" ")
 #     print()
 
-ant_map = [[int(i) for i in input().split()] for _ in range(10)]
-start_x, start_y = 1, 1
+# ant_map = [[int(i) for i in input().split()] for _ in range(10)]
+# start_x, start_y = 1, 1
 # feed = 1
 # status = [0, 0]
 # ant_map[start_x][start_y] = 9
+#
 # while sum(status) != 2:
 #     if ant_map[start_x][start_y+1] == 1:
 #         status[0] = 1
@@ -215,26 +216,81 @@ start_x, start_y = 1, 1
 #         start_y += 1
 #         ant_map[start_x][start_y] = 9
 
-x = 1
-y = 1
-while True:
-    if ant_map[x][y] == 0:
-        ant_map[x][y] = 9
-    elif ant_map[x][y] == 2:
-        ant_map[x][y] = 9
-        break
+# ant_map = [[int(i) for i in input().split()] for _ in range(10)]
+# start_x, start_y = 1, 1
+# x = 1
+# y = 1
+# while True:
+#     if ant_map[x][y] == 0:
+#         ant_map[x][y] = 9
+#     elif ant_map[x][y] == 2:
+#         ant_map[x][y] = 9
+#         break
+#
+#     if (ant_map[x][y+1] == 1 and ant_map[x+1][y] == 1) \
+#             or (x == 9 and y == 9):
+#         break
+#
+#     if ant_map[x][y+1] != 1:
+#         y += 1
+#     elif ant_map[x+1][y] != 1:
+#         x += 1
+#
+# for i in range(10):
+#     for j in range(10):
+#         print(ant_map[i][j], end=" ")
+#     print()
 
-    if (ant_map[x][y+1] == 1 and ant_map[x+1][y] == 1) \
-            or (x == 9 and y == 9):
-        break
 
-    if ant_map[x][y+1] != 1:
-        y += 1
-    elif ant_map[x+1][y] != 1:
-        x += 1
+# def find_feed(r, c):
+#     global maze
+#
+#     if maze[r][c] == '2':
+#         maze[r][c] = '9'
+#         return
+#
+#     maze[r][c] = '9'
+#
+#     if c+1 < 10 and maze[r][c+1] == '0':
+#         c += 1
+#     elif not maze[r+1][c] == '1':
+#         r += 1
+#     else:
+#         return
+#
+#     find_feed(r, c)
+#
+#
+# maze = [list(input().split()) for _ in range(10)]
+# find_feed(1, 1)
+#
+# for i in range(10):
+#     for j in range(10):
+#         print(int(maze[i][j]), end=' ')
+#     print()
 
-for i in range(10):
-    for j in range(10):
-        print(ant_map[i][j], end=" ")
-    print()
-
+# def find_feed(r, c):
+#     global maze
+#
+#     if maze[r][c] == '2':
+#         maze[r][c] = '9'
+#         return
+#
+#     maze[r][c] = '9'
+#
+#     if c+1 < 10 and maze[r][c+1] == '0' or maze[r][c+1] == '2':
+#         c += 1
+#     elif not maze[r+1][c] == '1' or maze[r+1][c] == '2':
+#         r += 1
+#     else:
+#         return
+#     find_feed(r, c)
+#
+#
+# maze = [list(input().split()) for _ in range(10)]
+# find_feed(1, 1)
+#
+# for i in range(10):
+#     for j in range(10):
+#         print(int(maze[i][j]), end=' ')
+#     print()
