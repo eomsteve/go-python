@@ -192,9 +192,9 @@ https://codeup.kr/problemsetsol.php?psid=33
 
 [95. \[기초-리스트\] 바둑판에 흰 돌 놓기](https://codeup.kr/problem.php?id=6095)
 
-[96. \[기초-리스트\] 이상한 출석 번호 부르기1](https://codeup.kr/problem.php?id=6096)
+[96. \[기초-리스트\] 바둑알 십자 뒤집기](https://codeup.kr/problem.php?id=6096)
 
-[97. \[기초-리스트\] 이상한 출석 번호 부르기1](https://codeup.kr/problem.php?id=6097)
+[97. \[기초-리스트\] 설탕과자 뽑기](https://codeup.kr/problem.php?id=6097)
 
-[98. \[기초-리스트\] 이상한 출석 번호 부르기1](https://codeup.kr/problem.php?id=6098)
+[98. \[기초-리스트\] 성실한 개미](https://codeup.kr/problem.php?id=6098)
 

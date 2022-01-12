@@ -134,7 +134,106 @@
 # num.reverse()
 # print(num)
 
-n = int(input())
-num = [int(i) for i in input().split()]
+# n = int(input())
+# num = [int(i) for i in input().split()]
+#
+# print(min(num))
 
-print(min(num))
+# array_map = [[0 for i in range(19)] for j in range(19)]
+#
+# n = int(input())
+#
+# for i in range(n):
+#     a, b = map(int, input().split())
+#     array_map[a-1][b-1] = 1
+#
+# for i in range(19):
+#     for j in range(19):
+#         print(array_map[i][j], end=" ")
+#     print()
+
+# array_map = [[int(i) for i in input().split()] for j in range(19)]
+#
+# n = int(input())
+#
+# for i in range(n):
+#     a, b = map(int, input().split())
+#     for j in range(19):
+#         array_map[a-1][j] = 0 if array_map[a-1][j] else 1
+#
+#     for k in range(19):
+#         array_map[k][b-1] = 0 if array_map[k][b-1] else 1
+#
+# for i in range(19):
+#     for j in range(19):
+#         print(array_map[i][j], end=" ")
+#     print()
+
+# h, w = map(int, input().split())
+# array_map = [[0 for i in range(w)] for j in range(h)]
+# n = int(input())
+#
+# for i in range(n):
+#     ln, d, x, y = map(int, input().split())
+#     for j in range(ln):
+#         if d:
+#             array_map[x-1][y-1] = 1
+#             x += 1
+#         else:
+#             array_map[x-1][y-1] = 1
+#             y += 1
+#
+# for i in range(h):
+#     for j in range(w):
+#         print(array_map[i][j], end=" ")
+#     print()
+
+ant_map = [[int(i) for i in input().split()] for _ in range(10)]
+start_x, start_y = 1, 1
+# feed = 1
+# status = [0, 0]
+# ant_map[start_x][start_y] = 9
+# while sum(status) != 2:
+#     if ant_map[start_x][start_y+1] == 1:
+#         status[0] = 1
+#         if ant_map[start_x+1][start_y] == 1:
+#             status[1] = 1
+#         else:
+#             if ant_map[start_x+1][start_y] == 2:
+#                 start_x += 1
+#                 ant_map[start_x][start_y] = 9
+#                 break
+#             status[1] = 0
+#             start_x += 1
+#             ant_map[start_x][start_y] = 9
+#     else:
+#         if ant_map[start_x][start_y+1] == 2:
+#             start_y += 1
+#             ant_map[start_x][start_y] = 9
+#             break
+#         status[0] = 0
+#         start_y += 1
+#         ant_map[start_x][start_y] = 9
+
+x = 1
+y = 1
+while True:
+    if ant_map[x][y] == 0:
+        ant_map[x][y] = 9
+    elif ant_map[x][y] == 2:
+        ant_map[x][y] = 9
+        break
+
+    if (ant_map[x][y+1] == 1 and ant_map[x+1][y] == 1) \
+            or (x == 9 and y == 9):
+        break
+
+    if ant_map[x][y+1] != 1:
+        y += 1
+    elif ant_map[x+1][y] != 1:
+        x += 1
+
+for i in range(10):
+    for j in range(10):
+        print(ant_map[i][j], end=" ")
+    print()
