@@ -1,4 +1,4 @@
-# 코드업 쉬운문제 200문제 풀기 도전
+# 코드업 기초 100문제 풀기 도전
 
 https://codeup.kr/problemsetsol.php?psid=33
 
