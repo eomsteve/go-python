@@ -1,7 +1,68 @@
 # 파이썬 알고리즘 잍터뷰 : 95가지 알고리즘 문제 풀이로 완성하는 코딩테스트 
 
-를 정리하고 알고리즘 풀이를 위한 깃 입니다.
+책 내용 정리, 알고리즘 문제 풀이
 
-## 문자열 조작
+# 문자열 조작
 
- 
+ * 정보 처리 분야
+ * 통신 시스템 분야
+ * 프로그래밍 시스템 분야
+
+## 유요한 팰린드롬(회문) : 문자열이 회문인지 확인한다.
+
+>내가 푼 방법 
+>1. 입력 값을 리스트로 가져올 때 문자가 아닌 것은 리스트에 추가하지 않는 동시에 
+> 소문자로 변환한다.
+>2. 리스트 인덱스 슬라이싱을 통해 절반의 값과 뒤의 절반의 값을 비교한다.
+> ```text
+> list_of_input = list("string")
+> j = len(list_of_input) // 2
+> 
+> if result[:j] == result[-1:j:-1]:
+>    print(True)
+>else:
+>    print(False) 
+>```
+
+1. 리스트로 변환 
+   * `isalnum()`을 통해 영문자 숫자여부를 판별하는 함수다. 이를 이용해 해당하는 문자만 추가한다.
+   * `pop()` 함수에서 인덱스를 지정할 수 있기 때문에 0을 지정하면 맨앞의 값을 가져올 수 있다.
+   * 맨 뒷부분의 `pop()`결과와 매칭해 나가면서 일치하지 않는 경우 `False`를 반환한다.
+```python
+def is_palindrome(self,  s:str) -> bool:
+    strs = []
+    for char in s:
+        if char.isalnum():
+            strs.append(char.lower())
+    
+    while len(strs) > 1:
+        if strs.pop(0) != strs.pop():
+            return False
+   
+    return True
+```
+
+2. 슬라이싱 사용
+   * 별다른 알고리즘을 사용한게아닌 슬라이싱을 사용한다. 앞서 풀이는 `isalnum()`으로 모든 문자를 일일이 점검했다. 
+   * 여기서는 문자열 전체를 한번에 영숫자만 걸러내도록 정규식으로 처리했다.
+   * 파이썬의 슬라이싱 기능 최대한 활용
+
+```python
+import re
+
+
+def is_palindrome_py(self, s: str) -> bool:
+    s = s.lower()
+    s = re.sub('[^a-z0-9]','',s)
+    
+    return s == s[::-1] #뒤집기
+```
+
+새로 알게 된 것 : `isalpha():문자인지 문자 외 다른 자료형인지 판단한다.`,`isalnum():문자와 숫자가 아닌 다른 자료형을 판단한다.`
+,`re.sub('[^a-z0-9]','',s) 정규식으로 불필요한 문자 필터링`
+> ###정규 표현식 사용법
+> re.sub(pattern, repl, string, count=0, flags=0)
+> re.sub('패턴', '바꿀문자열', '문자열', 바꿀횟수)
+
+## 로그 파일 재정렬
+
