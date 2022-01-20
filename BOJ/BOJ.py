@@ -65,30 +65,104 @@
 #     else:
 #         print(0)
 
-n = int(input())
-result = []
-for _ in range(n):
-    k = int(input())
-    str_list = []
-    for _ in range(k):
-        str_list.append(input())
+# n = int(input())
+# result = []
+# for _ in range(n):
+#     k = int(input())
+#     str_list = []
+#     for _ in range(k):
+#         str_list.append(input())
+#
+#     cnt = 0
+#     for i in range(len(str_list)-1):
+#         for j in range(i + 1, len(str_list)):
+#             is_pal1 = str_list[i] + str_list[j]
+#             is_pal2 = str_list[j] + str_list[i]
+#             if is_pal1 == is_pal1[::-1]:
+#                 result.append(is_pal1)
+#                 cnt = 1
+#                 break
+#             if is_pal2 == is_pal2[::-1]:
+#                 result.append(is_pal2)
+#                 cnt = 1
+#                 break
+#
+#     if not cnt:
+#         result.append(0)
+#
+# for i in range(n):
+#     print(result[i])
 
-    cnt = 0
-    for i in range(len(str_list)-1):
-        for j in range(i + 1, len(str_list)):
-            is_pal1 = str_list[i] + str_list[j]
-            is_pal2 = str_list[j] + str_list[i]
-            if is_pal1 == is_pal1[::-1]:
-                result.append(is_pal1)
-                cnt = 1
-                break
-            if is_pal2 == is_pal2[::-1]:
-                result.append(is_pal2)
-                cnt = 1
-                break
+# def get_strong_word(words_x, words_y):
+#     number_x = number_y = 0
+#     for word_x in words_x:
+#         number_x +=ord(word_x)
+#     for word_y in words_y:
+#         number_y +=ord(word_y)
+#     return words_x if number_x > number_y else words_y
+#
+# print(get_strong_word('z','a'))
+# print(get_strong_word('tom','john'))
 
-    if not cnt:
-        result.append(0)
+# 모든 부분집합 : 멱집합
+# [1,2,3] >> 1 2 3 12 13 23 123 ''
+# [0, 0, 0] : selected 각 요소가 부분집합에 포함되는지 여부를 표시하는 배열
+# idx : 포함여부 결정할 요소 인덱스
 
-for i in range(n):
-    print(result[i])
+# N = 3
+# arr = [1, 2, 3]
+# selected = [0, 0 ,0]
+#
+#
+# def ps(idx):
+#     if idx == N:  # 모든 요소의 포함여부 결정, 인덱스 벗어남
+#         for i in range(N):
+#             if selected[i]:
+#                 print(arr[i],end="")
+#         print()
+#         return
+#     selected[idx] = 1 # idx 번째 요소가 부분집합에 포함
+#     ps(idx + 1)
+#     selected[idx] = 0 # idx 번째 요소가 부분집합에 미포함
+#     ps(idx + 1)
+
+# def is_pal_recursive(word):
+#     if type(word) is str:
+#         word_list = list(word)
+#     else:
+#         word_list = word
+#     if len(word) == 1:
+#         return
+#     if word_list.pop() == word[0]:
+#         print(word_list, word[0])
+#         return is_pal_recursive(word_list)
+#     else:
+#         return print("hjo")
+#
+# print(is_pal_recursive('tomato'))
+# print(is_pal_recursive('racecar'))
+# print(is_pal_recursive('azza'))
+
+# def is_pal_recursive2(word):
+#     if len(word) <= 1:
+#         return True
+#     if word[0] == word[-1]:
+#         return is_pal_recursive2(word[1:-1])
+#     else:
+#         return False
+
+# def is_pal_recursive(word):
+#     if type(word) is str:
+#         word_list = list(word)
+#     else:
+#         word_list = word
+#     if len(word) <= 1:
+#         return True
+#     if word_list.pop() == word_list.pop(0):
+#         return is_pal_recursive(word_list)
+#     else:
+#         return
+
+a = ['cde', 'cfc', 'abz']
+
+print(sorted(a, key=lambda s: (s[0], s[-1])))
