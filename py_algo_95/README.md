@@ -97,7 +97,7 @@ out_list = [
 ]
 ```
 
-### 풀이 1 : 정렬하여 딕션너리 추가
+### 풀이 : 정렬하여 딕션너리 추가
 
 애너그램을 판단하는 가장 간단한 방법은 정렬 하여 비교 하는 것이다. 
 애너그램 관계인 단어들을 정렬하면 서로 같은 값을 갖게 되기때문
@@ -105,4 +105,40 @@ out_list = [
 애너그램을 정렬 하게 되면 같은 값의 키를 가지게 되는데 이 키를 중심으로 단어들을 추가하면 
 같은 키를 가진 단어들끼리 저장되는 효과를 기대할 수 있다. 그렇기 때문에 dict를 사용했다.
 
+
+## 가장 긴 팰린드롬 부분 문자열
+
+가장 긴 회문 부분 문자열을 출력하라
+
+```python
+#입력
+my_input = "babad"
+#출력 "bab" | "aba"
+```
+
+### 중앙을 중심으로 확장하는 풀이
+
+최장공통문자열 유형의 문제중 하나, dp로 풀수 있지만 실행속도가 늦다.
+투 포인터가 중앙을 중심으로 확장하는 형태로 풀이한다.
+매칭을 찾으면 중앙을 중심으로 점점 확장해 나가면서 가장 긴 팰린드롬을 판별하는 알고리즘을 구현하면 된다.
+
+```python
+
+def long(words):
+    def expand(left, right):
+        while left >= 0 and right <len(words) and words[left] == words[right]:
+            left -= 1
+            right +=1
+        return words[left+1 : right]
+    if len(words) < 2 or words == words[::-1]:
+        return len(words)
+    result = ''
+    for i in range(len(words) - 1):
+        result = max(result, expand(i, i+1), expand(i, i+2), key=len)
+    return len(result)
+
+n = input()
+
+print(long(n))
+```
 
