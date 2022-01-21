@@ -163,6 +163,20 @@
 #     else:
 #         return
 
-a = ['cde', 'cfc', 'abz']
+# a = ['cde', 'cfc', 'abz']
+#
+# print(sorted(a, key=lambda s: (s[0], s[-1])))
 
-print(sorted(a, key=lambda s: (s[0], s[-1])))
+
+a, b = map(int, input().split())
+
+if a > b:
+    print('>')
+elif a == b:
+    print('==')
+else:
+    print('<')
+
+
+
+
